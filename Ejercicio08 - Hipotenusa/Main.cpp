@@ -1,15 +1,15 @@
-// 8. Escriba un programa que lea de la entrada estÃ¡ndar los dos catetos de un triÃ¡ngulo rectÃ¡ngulo y 
-//    escriba en la salida estÃ¡ndar su hipotenusa.
+// 8. Escriba un programa que lea de la entrada estándar los dos catetos de un
+//    triángulo rectángulo y escriba en la salida estándar su hipotenusa.
 
 #include <iostream>
+#include <math.h>
 
 using std::cout;
 using std::cin;
-using std::endl;
 
 int main()
 {
-    float Cateto1, Cateto2, Hipotenusa = 0;
+    float Cateto1{}, Cateto2{}, Hipotenusa{};
 
     cout << "Cateto A: "; cin >> Cateto1;
     cout << "Cateto B: "; cin >> Cateto2;
@@ -18,6 +18,7 @@ int main()
     Hipotenusa = sqrt(Hipotenusa);
 
     cout.precision(2);
-    cout << "\nHipotenusa: " << Hipotenusa << endl;
+    cout << "\nHipotenusa: " << Hipotenusa << "\n";
+
     return 0;
 }
